@@ -32,7 +32,7 @@ else:
         print(f"{la} {lb + 1}")
     elif sum_a <= sum_b:
         print(f"{la+1} {lb}")
-    
+
 
 
 
