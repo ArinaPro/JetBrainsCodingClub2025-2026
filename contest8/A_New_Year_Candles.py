@@ -1,13 +1,9 @@
 a, b = list(map(int, input().split()))
 res = a
-a, b = [max(a, b), min(a, b)]
-
-while a > b:
-    a = a//b
-    res += a
-    if a> b:
-        a += a%b
-if a == b:
-    res += 1
-
+#a, b = [max(a, b), min(a, b)]
+if b<=a:
+    while a >= b:
+        c = a//b
+        res += c
+        a = c + (a - c*b)
 print(res)
